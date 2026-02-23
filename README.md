@@ -1,4 +1,14 @@
+# SecureNovaPC
 
+## Project Overview
+SecureNovaPC is a secure and efficient personal computer management application designed to help users easily manage and monitor their PC activity while ensuring data protection and privacy.
+
+## Features
+- **User Management**: Manage users and their permissions.
+- **Activity Monitoring**: Monitor user activities and generate reports.
+- **Data Encryption**: Keep sensitive information secure with advanced encryption.
+- **Alert System**: Get notifications for suspicious activities.
+- **Cross-Platform Support**: Works on Windows, macOS, and Linux.
 ---
 
 ## ✨ FEATURES
