@@ -1,0 +1,132 @@
+<UserControl x:Class="SecureNovaPC.Views.ReportsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="600" d:DesignWidth="900"
+             Background="#F5F5F5">
+    <Grid>
+        <StackPanel Margin="20">
+            <!-- Header -->
+            <TextBlock Text="Security Reports" 
+                       FontSize="28" 
+                       FontWeight="Bold" 
+                       Foreground="#1a1a1a"
+                       Margin="0,0,0,20"/>
+
+            <!-- Report Tabs -->
+            <TabControl>
+                <!-- Scan History Tab -->
+                <TabItem Header="Scan History" Padding="15,10">
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="Recent Scans" 
+                                       FontSize="16" 
+                                       FontWeight="Bold"
+                                       Margin="0,0,0,10"/>
+                            
+                            <DataGrid AutoGenerateColumns="False" 
+                                      Height="250"
+                                      Background="White">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Scan Type" Width="150" Binding="{Binding ScanType}"/>
+                                    <DataGridTextColumn Header="Date" Width="150" Binding="{Binding ScanDate}"/>
+                                    <DataGridTextColumn Header="Duration" Width="120" Binding="{Binding Duration}"/>
+                                    <DataGridTextColumn Header="Threats Found" Width="120" Binding="{Binding ThreatsFound}"/>
+                                    <DataGridTextColumn Header="Status" Width="150" Binding="{Binding Status}"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+
+                <!-- Threat Statistics Tab -->
+                <TabItem Header="Threat Statistics" Padding="15,10">
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="Threat Overview" 
+                                       FontSize="16" 
+                                       FontWeight="Bold"
+                                       Margin="0,0,0,10"/>
+                            
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <!-- Total Threats -->
+                                <Border Background="#FF6B6B" CornerRadius="8" Padding="15" Margin="5">
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock Text="Total Threats" Foreground="White" FontSize="12"/>
+                                        <TextBlock Text="24" Foreground="White" FontSize="24" FontWeight="Bold"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- Quarantined -->
+                                <Border Background="#4ECDC4" CornerRadius="8" Padding="15" Margin="5" Grid.Column="1">
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock Text="Quarantined" Foreground="White" FontSize="12"/>
+                                        <TextBlock Text="18" Foreground="White" FontSize="24" FontWeight="Bold"/>
+                                    </StackPanel>
+                                </Border>
+
+                                <!-- Removed -->
+                                <Border Background="#45B7D1" CornerRadius="8" Padding="15" Margin="5" Grid.Column="2">
+                                    <StackPanel VerticalAlignment="Center">
+                                        <TextBlock Text="Removed" Foreground="White" FontSize="12"/>
+                                        <TextBlock Text="6" Foreground="White" FontSize="24" FontWeight="Bold"/>
+                                    </StackPanel>
+                                </Border>
+                            </Grid>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+
+                <!-- Activity Log Tab -->
+                <TabItem Header="Activity Log" Padding="15,10">
+                    <Grid>
+                        <StackPanel>
+                            <TextBlock Text="Recent Activities" 
+                                       FontSize="16" 
+                                       FontWeight="Bold"
+                                       Margin="0,0,0,10"/>
+                            
+                            <ListBox Height="300" Background="White">
+                                <ListBoxItem>
+                                    <TextBlock Text="[2026-02-23 14:30] Threat detected and quarantined" Foreground="#1a1a1a"/>
+                                </ListBoxItem>
+                                <ListBoxItem>
+                                    <TextBlock Text="[2026-02-23 13:15] Full system scan completed" Foreground="#1a1a1a"/>
+                                </ListBoxItem>
+                                <ListBoxItem>
+                                    <TextBlock Text="[2026-02-23 12:00] Real-time protection enabled" Foreground="#1a1a1a"/>
+                                </ListBoxItem>
+                                <ListBoxItem>
+                                    <TextBlock Text="[2026-02-23 11:45] Database updated successfully" Foreground="#1a1a1a"/>
+                                </ListBoxItem>
+                            </ListBox>
+                        </StackPanel>
+                    </Grid>
+                </TabItem>
+            </TabControl>
+
+            <!-- Export Button -->
+            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
+                <Button Content="Export Report" 
+                        Background="#0066CC" 
+                        Foreground="White"
+                        Padding="15,10"
+                        CornerRadius="5"
+                        Margin="0,0,10,0"/>
+                <Button Content="Print" 
+                        Background="#666666" 
+                        Foreground="White"
+                        Padding="15,10"
+                        CornerRadius="5"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</UserControl>
