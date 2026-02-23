@@ -1,0 +1,26 @@
+# End User License Agreement (EULA)
+
+## 1. License Grant
+SecureNovaPC grants you a non-exclusive, non-transferable license to use the software according to the terms outlined in this agreement.
+
+## 2. Pricing Details
+- **1-PC License Options:**
+  - 1-Year: $49.99
+  - 3-Year: $99.99
+  - 5-Year: $149.99
+
+- **2-PC License Options:**
+  - 1-Year: $79.99
+  - 3-Year: $159.99
+  - 5-Year: $249.99
+
+- **5-PC License Options:**
+  - 1-Year: $179.99
+  - 3-Year: $359.99
+  - 5-Year: $599.99
+
+## 3. Trial Period
+A 15-day free trial is available for all licenses. During the free trial, you may use the software without any cost. After the trial period expires, you are required to purchase a license to continue using the software.
+
+## 4. Governing Law
+This agreement shall be governed by the laws of the jurisdiction in which SecureNovaPC operates.
