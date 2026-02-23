@@ -139,6 +139,6 @@ This is proprietary software. Unauthorized copying, modification, or distributio
 
 ---
 
-**© 2026 koyarhsk-debug. All Rights Reserved. PROPRIETARY SOFTWARE.**
+**© 2026 SecureNovaPC-debug. All Rights Reserved. PROPRIETARY SOFTWARE.**
 
 *Version 1.5.0 | Status: Commercial Release | Last Updated: 2026-02-23*
