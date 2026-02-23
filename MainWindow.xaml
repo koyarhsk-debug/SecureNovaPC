@@ -1,0 +1,20 @@
+<Window x:Class="SecureNovaPC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Secure Nova PC" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ListBox x:Name="SidebarNavigation" Grid.Column="0">
+            <ListBoxItem Content="Home" />
+            <ListBoxItem Content="Settings" />
+            <ListBoxItem Content="Log" />
+            <ListBoxItem Content="Help" />
+        </ListBox>
+        <ContentControl x:Name="MainContent" Grid.Column="1">
+            <TextBlock Text="Welcome to Secure Nova PC!" FontSize="24" />
+        </ContentControl>
+    </Grid>
+</Window>
