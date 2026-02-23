@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:SecureNovaPC.Utils">
+
+    <!-- ========== BOOLEAN TO VISIBILITY CONVERTER ========== -->
+    <local:BooleanToVisibilityConverter x:Key="BoolToVisibility"/>
+    <local:BooleanToVisibilityConverter x:Key="InverseBoolToVisibility" IsInversed="True"/>
+
+    <!-- ========== BOOLEAN TO COLOR CONVERTER ========== -->
+    <local:BooleanToColorConverter x:Key="BoolToColor"/>
+    <local:BooleanToColorConverter x:Key="BoolToColorInverse" IsInversed="True"/>
+
+    <!-- ========== STRING TO VISIBILITY CONVERTER ========== -->
+    <local:StringToVisibilityConverter x:Key="StringToVisibility"/>
+
+    <!-- ========== VALUE TO PERCENTAGE CONVERTER ========== -->
+    <local:ValueToPercentageConverter x:Key="ValueToPercentage"/>
+
+    <!-- ========== THREAT LEVEL TO COLOR CONVERTER ========== -->
+    <local:ThreatLevelToColorConverter x:Key="ThreatLevelToColor"/>
+
+    <!-- ========== STATUS TO BRUSH CONVERTER ========== -->
+    <local:StatusToBrushConverter x:Key="StatusToBrush"/>
+
+    <!-- ========== DOUBLE TO STRING CONVERTER ========== -->
+    <local:DoubleToStringConverter x:Key="DoubleToString"/>
+
+    <!-- ========== DATE FORMAT CONVERTER ========== -->
+    <local:DateFormatConverter x:Key="DateFormat"/>
+
+</ResourceDictionary>
